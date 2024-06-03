@@ -11,9 +11,11 @@
   "dependencies": {
     "@vuuui/solidjs": "^0.1.1",
     "solid-js": "^1.8.15",
-    "solidjs-remixicon": "^1.1.2"
+    "solidjs-remixicon": "^1.1.2",
+    "turndown": "^7.1.3"
   },
   "devDependencies": {
+    "@types/turndown": "^5.0.4",
     "sass": "^1.76.0",
     "typescript": "^5.2.2",
     "vite": "^5.2.0",

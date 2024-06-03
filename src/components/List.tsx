@@ -6,6 +6,8 @@ import { EditModal } from "./EditModal"
 import type { Accessor } from 'solid-js'
 
 function deleteLine(index: Accessor<number>) {
+	if (!confirm("Confirm?")) return;
+
 	const newLines = lineStore.lines.filter((_, lineIndex) => lineIndex != index())
 	setLineStore('lines', () => newLines)
 }

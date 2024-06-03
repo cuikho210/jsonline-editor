@@ -15,27 +15,41 @@ html, body {
 	margin: auto;
 	max-width: 100%;
 
+	.app-header {
+		position: sticky;
+		top: 0;
+		z-index: 10;
+		background-color: rgba(var(--vuuui-color-bg--rgb), .8);
+		backdrop-filter: blur(8px);
+		border-bottom: 1px solid var(--vuuui-color-border);
+	}
+
 	.app-title {
 		padding-top: 1rem;
 		text-align: center;
 	}
+}
 
-	.table-wrapper {
-		max-width: 100%;
-		overflow: auto;
-	
-		table {
-			min-width: 100%;
+.table-wrapper {
+	max-width: 100%;
+	overflow: auto;
 
-			th, td {
-				padding: .4rem 1rem;
-				border: 1px solid #00000008;
-				border-radius: 4px;
+	table {
+		min-width: 100%;
+
+		th, td {
+			padding: .4rem 1rem;
+			border: 1px solid #00000008;
+			border-radius: 4px;
+			vertical-align: top;
+
+			img {
+				max-height: 64vh;
 			}
+		}
 
-			th {
-				background-color: rgba(var(--vuuui-color-primary--rgb), .04);
-			}
+		th {
+			background-color: rgba(var(--vuuui-color-primary--rgb), .04);
 		}
 	}
 }

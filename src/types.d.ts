@@ -16,3 +16,8 @@ export interface JsonlMessage {
 }
 
 type InputHandler = JSX.EventHandlerUnion<HTMLTextAreaElement, Event>
+
+interface AppStateData {
+	defaultSystemMessage: string
+	messages: Message[]
+}
